@@ -1,0 +1,16 @@
+name: 'Build and Test'
+description: 'Action to build and test the project'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: 'Checkout code'
+      uses: actions/checkout@v2
+
+    - name: 'Build project'
+      run: |
+        # Add the commands to build your project here
+
+    - name: 'Run tests'
+      run: |
+        # Add the commands to run tests here
