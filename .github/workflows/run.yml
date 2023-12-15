@@ -1,0 +1,14 @@
+name: Run Workflow
+on:
+  workflow_dispatch
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Run Script'
+        uses: ./
+        with:
+          script: |
+            echo "Hello, World!"
+            echo "This is a bash script."
