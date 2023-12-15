@@ -1,0 +1,14 @@
+name: 'Run Script'
+description: 'Action to run a bash script'
+
+inputs:
+  script:
+    description: 'The script to run'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: 'Run Script'
+      run: |
+        ${{ inputs.script }}
