@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Run Script'
-        uses: ./
+        uses: ./action.yml
         with:
           script: |
             echo "Hello, World!"
