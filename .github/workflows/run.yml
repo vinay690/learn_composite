@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: 'Run Script'
-        uses: ./action.yml
+        uses: ./
         with:
           script: |
             echo "Hello, World!"
