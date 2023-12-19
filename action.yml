@@ -8,8 +8,8 @@ inputs:
 
 runs:
   using: 'composite'
-  shell: bash
   steps:
     - name: 'Run Script'
+      shell: bash  # Set the shell for this specific run step
       run: |
         ${{ inputs.script }}
